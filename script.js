@@ -1,6 +1,4 @@
-function select(id) {
-
-var div = document.getElementById(id);
-
-div.classList.replace("card", "card_flipped");
+var div = document.getElementsByClassName("card");
+function select() {
+    div.setAttribute("card", "card_flipped")
 }
