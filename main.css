@@ -20,3 +20,7 @@
     flex: auto;
     flex-basis: 18%;
 }
+
+.card_flipped{
+    background-color: aqua;
+}
