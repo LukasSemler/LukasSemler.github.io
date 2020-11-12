@@ -1,4 +1,3 @@
-var div = document.getElementsByClassName("card");
-function select() {
-    div.setAttribute("card", "card_flipped")
-}
+function select(el) {
+    el.classList.toggle("card_flipped");
+  }
