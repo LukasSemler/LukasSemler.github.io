@@ -1,3 +1,8 @@
+body{
+    background-color: grey;
+}
+
+
 .container{
     display: flex;
     justify-content: center;
@@ -13,14 +18,17 @@
 }
 
 .card{
-    background-color: lime;
+    background-color: black;
+    color: white;
     width: auto;
     height: auto;
     margin: 2%;
     flex: auto;
     flex-basis: 18%;
+    text-align: center;
 }
 
 .card_flipped{
     background-color: aqua;
+    color: black;
 }
