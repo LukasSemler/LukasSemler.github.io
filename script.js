@@ -1,14 +1,14 @@
-// function select(el) {
-//     el.classList.toggle("card_flipped");
-//   }
+let container = document.querySelector('#card-deck')
+for (let index = 1; index < 17; index++) {
+  let element = document.createElement('div')
+  element.classList.add("card")
+  container.appendChild(element)
+  element.innerHTML += index
+}
 
-// let elem = document.querySelectorAll(".card")
 
-// for (const i of elem) {
-//     i.addEventListener("click", select)
 
-// }
-
+// Karten Umdrehen 
 let kartListe = document.querySelectorAll('.card')
 
 kartListe.forEach(Element => {
@@ -16,3 +16,6 @@ kartListe.forEach(Element => {
     event.target.classList.toggle("card_flipped")
   })
 })
+
+//_______________________________________________________
+
