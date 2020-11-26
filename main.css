@@ -19,16 +19,23 @@ body{
 
 .card{
     background-color: black;
-    color: white;
+    color: black;
     width: auto;
     height: auto;
     margin: 2%;
     flex: auto;
     flex-basis: 18%;
     text-align: center;
+    padding-top: 10px;
 }
 
 .card_flipped{
     background-color: aqua;
     color: black;
+    
+}
+
+
+.found{
+    visibility: hidden;
 }
