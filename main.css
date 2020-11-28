@@ -20,6 +20,7 @@ body{
 .card{
     background-color: black;
     color: black;
+    text-indent: 0%;
     width: auto;
     height: auto;
     margin: 2%;
@@ -27,15 +28,26 @@ body{
     flex-basis: 18%;
     text-align: center;
     padding-top: 10px;
+    transform-style: preserve-3d;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    box-shadow: 5px 5px #008080;
+    
 }
+
+
 
 .card_flipped{
     background-color: aqua;
     color: black;
+    box-shadow: none;
+ 
+    
     
 }
 
 
 .found{
     visibility: hidden;
+    
 }
