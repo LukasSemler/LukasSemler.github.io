@@ -5,6 +5,10 @@ body{
     font-family: 'Nunito', sans-serif;
     font-size: x-large;
     font-weight: 800;
+    -ms-user-select: None;
+    -moz-user-select: None;
+    -webkit-user-select: None;
+    user-select: None;
     
     
 }
