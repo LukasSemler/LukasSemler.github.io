@@ -80,6 +80,7 @@ let openedCards = []
 let cardTypes=[]
 let counter = 0
 let countergefunden = 0
+let time = 0
 
 for (let index = 0; index < numberCards/2; index++) {
     cardTypes.push(index+1)
@@ -118,8 +119,14 @@ function openCard(c){
               countergefunden += 1
               console.log(countergefunden)
               document.querySelector('.CounterGefunden').textContent = `Gefunden Paare: ${countergefunden}`
+              
 
-            },
+              if (countergefunden == 8) {
+                alert(`Du hast alle innerhalb von ${time}sek alle Paare gefunden!!`)
+                location.reload();
+              }
+            }
+            ,
             1000
           )
         }
@@ -131,6 +138,7 @@ function openCard(c){
               counter += 1
               console.log(counter)
               document.querySelector('.Counter').textContent = `Versuche: ${counter}`
+              
 
               /*
               var el = document.createElement("p");
@@ -145,6 +153,10 @@ function openCard(c){
     }
 
 }
+
+var Timer = setInterval(function(){
+  time += 1
+}, 1000)
 
 
 

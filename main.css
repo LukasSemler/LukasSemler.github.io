@@ -21,17 +21,23 @@ body{
     border: 1px solid  rgb(0, 247, 255);
     padding: 5px;
     width: 30%;
-    height: 150px;
+    height: 125px;
     justify-content: center;
     box-shadow: 15px 15px rgb(46, 46, 46);
     text-align: center;
     flex-direction: column;
+    
 }
 
 .Counter{
     text-align: center;
     font-size: 30px;
     flex-basis: 100%;
+   
+    
+    
+    
+    
 }
 
 
@@ -39,6 +45,10 @@ body{
     text-align: center;
     font-size: 30px;
     flex-basis: 100%;
+    margin-top: -15px;
+    position: relative;
+    
+    
 
 }
 
@@ -58,7 +68,7 @@ body{
     width: 500px;
     height: 500px;
     border: 1px solid rgb(0, 247, 255);
-    padding: 30px;
+    padding: 20px;
     box-shadow: 15px 15px rgb(46, 46, 46);
     /* box-shadow: 10px 10px black; */
     
@@ -88,7 +98,7 @@ body{
 .card_flipped{
     background-color: aqua;
     color: black;
-    box-shadow: none;
+    box-shadow: 5px 5px rgb(46, 46, 46) ;
  
     
     
