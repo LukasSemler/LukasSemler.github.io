@@ -78,6 +78,9 @@
 const numberCards = 16
 let openedCards = []
 let cardTypes=[]
+let counter = 0
+let countergefunden = 0
+
 for (let index = 0; index < numberCards/2; index++) {
     cardTypes.push(index+1)
     cardTypes.push(index+1)
@@ -109,6 +112,12 @@ function openCard(c){
             ()=>{
               openedCards.pop().classList.toggle("found")
               openedCards.pop().classList.toggle("found")
+              
+
+
+              countergefunden += 1
+              console.log(countergefunden)
+              document.querySelector('.CounterGefunden').textContent = `Gefunden Paare: ${countergefunden}`
 
             },
             1000
@@ -119,7 +128,15 @@ function openCard(c){
             ()=>{
               openedCards.pop().classList.toggle("card_flipped")
               openedCards.pop().classList.toggle("card_flipped")
+              counter += 1
+              console.log(counter)
+              document.querySelector('.Counter').textContent = `Versuche: ${counter}`
 
+              /*
+              var el = document.createElement("p");
+              document.appendChild(el);
+              el.innerText
+              */  
             },
             1000
           )
