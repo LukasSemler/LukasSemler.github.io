@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+/* -----------------------------------------------------------------------------------_ */
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.1px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto;
+  height: 100px;
+  list-style: none;
+}
+.menu li {
+  width: 125px;
+  height: 50px;
+  transition: background-position-x 0.9s linear;
+  text-align: center;
+}
+.menu li a {
+  font-size: 22px;
+  color: #777;
+  text-decoration: none;
+  transition: all 0.45s;
+}
+
+.menu li:hover a {
+  color: rgb(0, 247, 255);
+}
+.menu li:not(:last-child) {
+  margin-right: 30px;
+}
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+hr{
+    border: 1px solid;
+    color: rgb(0, 247, 255);
+    background-color: rgb(0, 247, 255);
+    border-collapse: collapse;
+}
+
+
+
+body{
+    background-color: rgb(61, 61, 61);
+    font-family: 'Nunito', sans-serif;
+    font-size: x-large;
+    font-weight: 800;
+    -ms-user-select: None;
+    -moz-user-select: None;
+    -webkit-user-select: None;
+    user-select: None;
+    
+    
+}
+
+
+
+
+
+
+
+
+
