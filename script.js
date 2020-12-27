@@ -6,6 +6,7 @@ let counter = 0
 let countergefunden = 0
 let time = 0
 let farbe = "lime" 
+let punkte = 0
 
 
 
@@ -21,6 +22,7 @@ for (let index = 0; index < numberCards; index++) {
         c.innerHTML = cardTypes[index]
         c.type = cardTypes[index]
         c.className="card"
+        c.id = index
         c.addEventListener('click',flipp)
         p.appendChild(c)
 }
@@ -32,6 +34,7 @@ function flipp(event){
 }
 function openCard(c){
     //alert(c.innerHTML)
+    
     if(openedCards.length < 2){
       c.classList.toggle("card_flipped")
       openedCards.push(c)
@@ -50,7 +53,10 @@ function openCard(c){
               
 
               if (countergefunden == 8) {
-                alert(`Du hast alle innerhalb von ${time}sek alle Paare gefunden!!`)
+                punkte = counter + time 
+                alert(time)
+                let time_gerundet = Math.round(punkte)
+                alert(`Du hast ${time_gerundet} Punkte erreicht !`)
                 location.reload();
               }
             }
@@ -104,10 +110,6 @@ function shuffle(arra1) {
     return arra1;
 }
 
-
-function test(){
-  document.getElementsByTagName("body")[0].style.backgroundColor = "lime"
-}
 
 
 
