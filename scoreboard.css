@@ -155,15 +155,32 @@ table {
 
 
   
-.Datenschutz_Link{
-    text-align: center;
-    padding-bottom: 5px;
-}
-
-.Datenschutz_index{
+  .Datenschutz_index{
     text-align: center;
     color: black;
     text-decoration: none;
+    justify-items: center; 
+    align-items: center;
+    padding: 5px;
   }
+  
+  .footer_index{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  
+  }
+  .Test{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+
   
   
